@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginSize">15dp</dimen>
+    <dimen name="marginText">8dp</dimen>
+    <dimen name="tile_text_size">15sp</dimen>
+</resources>

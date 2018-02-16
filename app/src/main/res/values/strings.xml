@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PC Tech</string>
+    <string name="title_contact_info">Contact Information</string>
+    <string name="title_tel">Tel: </string>
+    <string name="tel_number">+34970874245</string>
+    <string name="title_email">E-mail</string>
+    <string name="email_address">support@pctech.net</string>
+    <string name="title_website">Website:</string>
+    <string name="website">www.pctech.net</string>
+    <string name="title_address">Address:</string>
+    <string name="address">Camino de Ronda Street, 32</string>
+    <string name="title_description">Description</string>
+    <string name="description">This company is dedicated to the repair\n and maintenance of computer equipment.</string>
+    <string name="weekdays">Weekdays</string>
+    <string name="title_hours_operation">hours of operation</string>
+    <string name="morning_hours">Mornings:</string>
+    <string name="opening_hours_morning">8:30 to 14:30</string>
+    <string name="afternoon_hours">Afternoons: </string>
+    <string name="opening_hours_afternoon">17:30 to 20:30</string>
+    <string name="weekend">Weekend</string>
+    <string name="opening_hours_weekend_morning">8:30 to 14:00</string>
+    <string name="opening_hours_weekend_afternoon">17:00 to 19:30</string>
+    <string name="warning_message">This site is just a fictional business.</string>
+</resources>

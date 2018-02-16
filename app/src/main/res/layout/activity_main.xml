@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.simplescreenapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="@dimen/marginSize"
+        android:layout_marginTop="@dimen/marginSize"
+        android:src="@drawable/backimage" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/marginSize"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:layout_marginRight="@dimen/marginSize"
+        android:solidColor="@android:color/holo_blue_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:layout_marginRight="@dimen/marginSize"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/BoldTextViewStyle"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/title_contact_info"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginSize"
+            android:layout_marginLeft="@dimen/marginSize"
+            android:layout_marginRight="@dimen/marginSize"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_addr"
+                style="@style/BlackTextViewStyle"
+                android:text="@string/title_address"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginText"
+                android:layout_toRightOf="@id/title_addr"
+                android:text="@string/address" />
+
+            <TextView
+                android:id="@+id/title_tel"
+                style="@style/BlackTextViewStyle"
+                android:layout_below="@id/address"
+                android:text="@string/title_tel" />
+
+            <TextView
+                android:id="@+id/tel_number"
+                style="@style/TextViewStyle"
+                android:layout_below="@id/address"
+                android:layout_toRightOf="@id/title_tel"
+                android:text="@string/tel_number" />
+
+            <TextView
+                android:id="@+id/title_website"
+                style="@style/BlackTextViewStyle"
+                android:text="@string/title_website"
+                android:layout_below="@id/title_tel"/>
+
+            <TextView
+                android:id="@+id/website"
+                style="@style/TextViewStyle"
+                android:text="@string/website"
+                android:layout_below="@id/tel_number"
+                android:layout_toRightOf="@id/title_website"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_description"
+                style="@style/BoldTextViewStyle"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/title_description"/>
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/LargeTextViewStyle"
+                android:layout_below="@id/title_description"
+                android:text="@string/description" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginSize">
+
+            <TextView
+                android:id="@+id/title_operation_time"
+                style="@style/BoldTextViewStyle"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/title_hours_operation"/>
+
+            <RelativeLayout
+                android:id="@+id/weekday_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_operation_time"
+                android:layout_marginLeft="@dimen/marginSize">
+
+                <TextView
+                    android:id="@+id/weekday"
+                    style="@style/BlackTextViewStyle"
+                    android:text="@string/weekdays" />
+
+                <TextView
+                    android:id="@+id/morning"
+                    style="@style/BlackTextViewStyle"
+                    android:layout_below="@id/weekday"
+                    android:text="@string/morning_hours"
+                    android:layout_marginLeft="@dimen/marginSize"/>
+
+                <TextView
+                    android:id="@+id/morning_hours"
+                    style="@style/TextViewStyle"
+                    android:layout_below="@id/weekday"
+                    android:layout_toRightOf="@id/morning"
+                    android:text="@string/opening_hours_morning" />
+
+                <TextView
+                    android:id="@+id/afternoon"
+                    style="@style/BlackTextViewStyle"
+                    android:layout_below="@id/morning"
+                    android:text="@string/afternoon_hours"
+                    android:layout_marginLeft="@dimen/marginSize"/>
+
+                <TextView
+                    android:id="@+id/afternoon_hours"
+                    style="@style/TextViewStyle"
+                    android:layout_below="@id/morning_hours"
+                    android:layout_toRightOf="@id/afternoon"
+                    android:text="@string/opening_hours_afternoon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/weekend_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/weekday_layout"
+                android:layout_marginLeft="@dimen/marginSize">
+
+                <TextView
+                    android:id="@+id/weekend"
+                    style="@style/BlackTextViewStyle"
+                    android:text="@string/weekend" />
+
+                <TextView
+                    android:id="@+id/morning_weekend"
+                    style="@style/BlackTextViewStyle"
+                    android:layout_below="@id/weekend"
+                    android:layout_marginLeft="@dimen/marginSize"
+                    android:text="@string/morning_hours" />
+
+                <TextView
+                    android:id="@+id/morning_hours_weekend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/weekend"
+                    android:layout_marginLeft="@dimen/marginText"
+                    android:layout_toRightOf="@id/morning_weekend"
+                    android:text="@string/opening_hours_weekend_morning" />
+
+                <TextView
+                    android:id="@+id/afternoon_weekend"
+                    style="@style/BlackTextViewStyle"
+                    android:layout_below="@id/morning_weekend"
+                    android:layout_marginLeft="@dimen/marginSize"
+                    android:text="@string/afternoon_hours" />
+
+                <TextView
+                    android:id="@+id/afternoon_hours_weekend"
+                    style="@style/TextViewStyle"
+                    android:layout_below="@id/morning_hours_weekend"
+                    android:layout_toRightOf="@id/afternoon_weekend"
+                    android:text="@string/opening_hours_weekend_afternoon" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/marginSize"
+        android:background="@android:color/holo_red_dark"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/warning_message"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+</LinearLayout>
